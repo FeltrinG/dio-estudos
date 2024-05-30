@@ -1,0 +1,25 @@
+public class Usuario {
+    public static void main(String[] args) throws Exception {
+     
+        SmartTv SmartTv = new SmartTv();
+
+        SmartTv.diminuirVolume();
+        SmartTv.diminuirVolume();
+        SmartTv.diminuirVolume();
+        SmartTv.aumentarVolume();
+        System.out.println("Ccanal atual : " +SmartTv.canal);
+    
+        SmartTv.mudarcanal(13);
+        System.out.println("Ccanal atual : " +SmartTv.canal);
+
+        System.out.println("TV ligada ? " +SmartTv.ligada);
+        System.out.println("Ccanal atual : " +SmartTv.canal);
+        System.out.println("Volume atual :" +SmartTv.volume);
+
+        SmartTv.ligar();
+        System.out.println(" novo status-> TV ligada ? " +SmartTv.ligada);
+
+        SmartTv.desligar();
+        System.out.println(" novo status-> TV ligada ? " +SmartTv.ligada);
+    }
+}
